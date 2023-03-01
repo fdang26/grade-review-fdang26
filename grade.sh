@@ -11,7 +11,7 @@ echo 'Finished cloning'
 if [[ ! -f student-submission/ListExamples.java ]]
 then
     echo "ListExamples.java not found"
-    echo "Score is" $score
+    echo $score
     exit
 else
     echo "ListExamples.java found"
@@ -29,7 +29,7 @@ then
 else
     echo "Compile failed"
     score=0
-    echo "Score is" $score
+    echo $score
     exit
 fi
 # Run the tester on the implementation
